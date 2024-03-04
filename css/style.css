@@ -209,3 +209,35 @@ img{
     }
 }
 
+/*Sobre nosotros*/
+
+.nosotros{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-image: url(../img/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+@media (min-width: 768px){
+  .nosotros{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px){
+  .nosotros-texto{
+    grid-column: 2 /4;
+  }
+}
+
+.nosotros-texto{
+    padding: 5rem;
+    background-color: var(--blanco);
+}
+
+.nosotros-texto h2{
+    line-height: 1;
+}
+
+
