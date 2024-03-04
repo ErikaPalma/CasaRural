@@ -75,3 +75,137 @@ img{
 .mt-5{
     margin-top: 5rem;
 }
+
+/*Header*/
+
+.header{
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    padding: 5rem 0;
+}
+
+@media (min-width: 768px){
+    .header{
+        padding: 1rem 0;
+    }
+  
+}
+
+.contenido-header, .contacto a{
+    color: var(--blanco);
+}
+
+.contenido-header{
+    display: flex;
+    flex-direction: column;
+    height: calc(60rem - 4rem);
+    justify-content: space-between;
+}
+
+.logo h1{
+    font-weight: 300;
+    text-align: center;
+    font-size: 3rem;
+}
+
+@media (min-width: 768px){
+    .logo h1{
+        font-size: 5rem;
+    }
+  
+}
+
+.logo span{
+    font-weight: 900;
+}
+
+@media (min-width: 768px){
+    .barra{
+        display: flex;justify-content: space-between;
+        align-items: center;
+    }
+  
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px){
+    .contacto{
+        align-items: flex-end;
+    }
+  
+}
+
+.contacto a{
+    font-size: 2rem;
+}
+
+.telefono{
+    display: flex;
+}
+
+.telefono::before{
+    content: '';
+    display: block;
+    background-image: url(../img/telefono.png);
+    background-repeat: no-repeat;
+    background-position: center center ;
+    width: 4rem;
+    height: 4rem;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .navegacion{
+        flex-direction: row;
+    }
+  
+}
+
+.link{
+    transition: background-color .3s;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .link{
+        padding: .5rem 1rem;
+    }
+  
+}
+.link:hover{
+    background-color: rgba(255, 255, 255, 0.553);
+    border-radius: .5rem;
+    color: var(--negro)
+}
+
+.slogan{
+    text-align: center;
+}
+
+.slogan h2{
+    margin: 0;
+    font-size: 4rem;
+}
+
+@media (min-width: 768px){
+    .slogan{
+        text-align: right;
+        padding-bottom: 5rem;
+        line-height: 1;
+    }
+}
+
