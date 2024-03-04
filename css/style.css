@@ -382,5 +382,32 @@ img{
 }
 }
 
+/*Footer*/
+
+.footer{
+    background-image: url(../img/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--blanco);
+    padding: 5rem 0 2rem 0;
+}
+
+.footer .logo h2{
+    font-weight: 300;
+    text-align: center;
+    font-size: 3rem;
+}
+
+@media (min-width: 768px){
+    .footer .logo h2{
+        font-size: 5rem;
+    } 
+}
+
+.footer .logo span{
+    font-weight: 900;
+}
+
 
 
